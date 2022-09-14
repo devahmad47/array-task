@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+  //square root of number
+  var a = prompt ('please enter a number for Square Root','');
+  var b = Math.sqrt(a);
+  console.log('SAQUARE ROOT',b);
+//square of a number
+let n= prompt('please Enter a number for Square','');
+n=n*n;
+console.log('SQUARE',n);
+//copy array elements
+let myarray1=[12,15,20,11,13,45];
+let myarray2=[11,144,200,171,139,405];
+myarray1.push(myarray2);
+console.log("array with copied elements",myarray1);
+//max and minimum numbers
+let array=[11,144,200,171,139,405];
+console.log('array elements are',array);
+console.log("minimum number is", Math.min(11,144,200,171,139,405))
+console.log("maximum number is", Math.max(11,144,200,171,139,405))
+//total negative number in an arrray
+let d=[12,-13,-44,56,78];
+console.log('array with -ive values',d)
+ let count = 0;
+ for(i=0;i<d.length;i++){
+  if(d[i]<0)
+  count=count+1
+}
+console.log('total -ive values',count)
+//sum of all even values 1 to n 
+let z=prompt('please enter an Even number','')
+ let add=0;
+for(let i=0;i<z;i++){
+  if(i%2==0){
+  add=add+i;
+}
+}
+console.log('even Values sum',add)
+//count total number of duplicate elements 
+let array2=[11,12,144,12,200,171,139,144,405];
+console.log('array2',11,12,144,12,200,171,139,144,40)
+let numcnt={}
+array2.forEach(val =>numcnt[val]=(numcnt[val] || 0)+ 1);
+console.log('total duplicate numbers',numcnt)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
